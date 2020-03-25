@@ -11,11 +11,8 @@ class Anagram
     sorted_word = @word.split(/./).sort
     matches = []
     array.each do |word|
-      if word.split(/./).sort == sorted_word 
-        matches << word 
-      end 
+       matches << word  if word.split(/./).sort == sorted_word 
     end 
-      
-    end 
+    matches
   end 
 end 
