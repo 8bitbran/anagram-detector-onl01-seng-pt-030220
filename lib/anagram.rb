@@ -9,5 +9,6 @@ class Anagram
   
   def match(array) 
     sorted_word = @word.split(/./).sort!
+    
   end 
 end 
